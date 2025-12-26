@@ -1,1 +1,23 @@
-<p>header works!</p>
+<header class="header" [class.scrolled]="isScrolled">
+  <nav class="navbar container">
+    <div class="logo">
+      <a href="#home" (click)="scrollToSection($event, '#home')">
+        <span class="logo-text">Qihang Li Jiang</span>
+      </a>
+    </div>
+
+    <button class="mobile-menu-toggle" (click)="toggleMobileMenu()" [attr.aria-expanded]="isMobileMenuOpen">
+      <span class="hamburger" [class.active]="isMobileMenuOpen"></span>
+    </button>
+
+    <ul class="nav-menu" [class.active]="isMobileMenuOpen">
+      @for (item of navItems; track item.link) {
+        <li class="nav-item">
+          <a [href]="item.link" class="nav-link" (click)="scrollToSection($event, item.link)">
+            {{ item.label }}
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+</header>

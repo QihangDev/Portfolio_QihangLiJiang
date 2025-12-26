@@ -1,1 +1,49 @@
-<p>home works!</p>
+<app-header></app-header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <div class="hero-shape shape-1"></div>
+      <div class="hero-shape shape-2"></div>
+      <div class="hero-shape shape-3"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">{{ heroText.greeting }}</p>
+        <h1 class="hero-name">{{ heroText.name }}</h1>
+        <h2 class="hero-title">{{ heroText.title }}</h2>
+        <p class="hero-description">{{ heroText.description }}</p>
+
+        <div class="hero-buttons">
+          <button class="btn btn-primary" (click)="scrollToSection('#projects')">
+            Ver Proyectos
+          </button>
+          <button class="btn btn-outline" (click)="scrollToSection('#contact')">
+            Contactar
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-container">
+          <img src="https://via.placeholder.com/500x500" alt="Qihang Li Jiang">
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <button (click)="scrollToSection('#about')" aria-label="Scroll down">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="m6 9 6 6 6-6"/>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <app-about></app-about>
+  <app-projects></app-projects>
+  <app-contact></app-contact>
+</main>
+
+<app-footer></app-footer>
