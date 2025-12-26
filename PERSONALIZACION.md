@@ -2,49 +2,68 @@
 
 Esta guía te ayudará a personalizar rápidamente tu portfolio con tus datos personales.
 
+## Estado de Personalización
+
+### ✅ Completado
+- Datos personales básicos (nombre, título, descripción)
+- Imágenes de perfil (Hero y About)
+- Habilidades técnicas (Frontend, Backend, Herramientas)
+- Redes sociales (GitHub, LinkedIn, Instagram, Email)
+- Información de contacto (email y ubicación)
+- Estadísticas
+- Colores y branding
+
+### ⏳ Pendiente
+- Reemplazar proyectos de ejemplo con proyectos reales
+- Reemplazar imágenes placeholder de proyectos con imágenes reales
+- Conectar formulario de contacto a backend o servicio de email
+
 ## Checklist de Personalización
 
 ### 1. Datos Personales Básicos
 
-- [ ] **Nombre completo**
+- [x] **Nombre completo**
   - `src/app/components/header/header.html` - línea 5
   - `src/app/pages/home/home.ts` - línea 18
   - `src/app/components/footer/footer.html` - línea 5
+  - **Actualizado:** "Qihang Li Jiang"
 
-- [ ] **Título profesional**
+- [x] **Título profesional**
   - `src/app/pages/home/home.ts` - línea 19
+  - **Actualizado:** "Desarrollador Junior Full Stack"
 
-- [ ] **Descripción personal**
+- [x] **Descripción personal**
   - `src/app/pages/home/home.ts` - línea 20
   - `src/app/components/about/about.ts` - líneas 14-18
+  - **Actualizado:** Descripción personalizada sobre orientación al aprendizaje y mejora continua
 
 ### 2. Imágenes
 
-- [ ] **Foto de perfil Hero**
+- [x] **Foto de perfil Hero**
   - `src/app/pages/home/home.html` - línea 30
-  - Reemplaza `https://via.placeholder.com/500x500`
+  - **Actualizado:** `/img/foto_perfil_bici.jpeg`
 
-- [ ] **Foto de perfil About**
+- [x] **Foto de perfil About**
   - `src/app/components/about/about.ts` - línea 12
-  - Reemplaza `https://via.placeholder.com/400x400`
+  - **Actualizado:** `/img/foto_perfil.jpeg`
 
 - [ ] **Imágenes de proyectos**
   - `src/app/components/projects/projects.ts` - en cada proyecto
-  - Reemplaza todas las URLs de placeholder
+  - Reemplaza todas las URLs de placeholder (actualmente usando `https://via.placeholder.com/600x400`)
 
 ### 3. Habilidades
 
-- [ ] **Frontend Skills**
-  - `src/app/components/about/about.ts` - líneas 22-29
-  - Añade, elimina o modifica según tus habilidades
+- [x] **Frontend Skills**
+  - `src/app/components/about/about.ts` - líneas 24-29
+  - **Actualizado:** Angular (70%), Vue (60%), TypeScript (90%), JavaScript (80%), HTML/CSS (100%)
 
-- [ ] **Backend Skills**
-  - `src/app/components/about/about.ts` - líneas 32-39
-  - Personaliza con tus tecnologías
+- [x] **Backend Skills**
+  - `src/app/components/about/about.ts` - líneas 34-39
+  - **Actualizado:** C# / .NET (100%), Java (80%), Kotlin (50%), MongoDB (70%), PostgreSQL (90%), REST APIs (90%)
 
-- [ ] **Herramientas**
-  - `src/app/components/about/about.ts` - líneas 42-49
-  - Actualiza con las herramientas que usas
+- [x] **Herramientas**
+  - `src/app/components/about/about.ts` - líneas 45-49
+  - **Actualizado:** Git (100%), Jira (90%), Docker (50%), Visual Studio (100%), Unity (100%)
 
 ### 4. Proyectos
 
@@ -52,56 +71,65 @@ En `src/app/components/projects/projects.ts`, para cada proyecto actualiza:
 
 - [ ] `title`: Nombre del proyecto
 - [ ] `description`: Descripción breve
-- [ ] `image`: Ruta a la imagen del proyecto
+- [ ] `image`: Ruta a la imagen del proyecto (actualmente usando placeholders)
 - [ ] `technologies`: Array de tecnologías usadas
 - [ ] `githubUrl`: URL de tu repositorio
 - [ ] `liveUrl`: URL del proyecto en vivo
 - [ ] `featured`: true/false si es destacado
 
+**Nota:** Los proyectos actualmente contienen datos de ejemplo que deben ser reemplazados con tus proyectos reales.
+
 ### 5. Redes Sociales
 
-- [ ] **GitHub**
+- [x] **GitHub**
   - Contact: `src/app/components/contact/contact.ts` - línea 21
   - Footer: `src/app/components/footer/footer.ts` - línea 14
+  - **Actualizado:** `https://github.com/QihangDev`
 
-- [ ] **LinkedIn**
+- [x] **LinkedIn**
   - Contact: `src/app/components/contact/contact.ts` - línea 22
   - Footer: `src/app/components/footer/footer.ts` - línea 15
+  - **Actualizado:** `https://www.linkedin.com/in/qihang-li-jiang/`
 
-- [ ] **Twitter/X**
+- [x] **Instagram**
   - Contact: `src/app/components/contact/contact.ts` - línea 23
   - Footer: `src/app/components/footer/footer.ts` - línea 16
+  - **Actualizado:** `https://www.instagram.com/qihanglj`
 
-- [ ] **Email**
+- [x] **Email**
   - Contact: `src/app/components/contact/contact.ts` - línea 24
+  - **Actualizado:** `mailto:qihangdev@gmail.com`
 
 ### 6. Información de Contacto
 
-- [ ] **Email**
+- [x] **Email**
   - `src/app/components/contact/contact.html` - línea 38
   - `src/app/components/footer/footer.html` - línea 53
+  - **Actualizado:** `qihangdev@gmail.com`
 
-- [ ] **Ubicación**
+- [x] **Ubicación**
   - `src/app/components/contact/contact.html` - línea 25
   - `src/app/components/footer/footer.html` - línea 60
+  - **Actualizado:** "Ripollet, Barcelona, España"
 
-### 7. Estadísticas (Opcional)
+### 7. Estadísticas
 
 En `src/app/components/about/about.html`:
 
-- [ ] Años de experiencia - línea 22
-- [ ] Proyectos completados - línea 26
-- [ ] Número de tecnologías - línea 30
+- [x] Proyectos completados - línea 22
+  - **Actualizado:** "20+ Proyectos Completados"
+- [x] Número de tecnologías - línea 26
+  - **Actualizado:** "10+ Tecnologías"
 
 ### 8. Colores y Branding (Opcional)
 
-- [ ] **Colores principales**
+- [x] **Colores principales**
   - `src/styles.css` - líneas 3-5
-  - Modifica `--primary-color`, `--secondary-color`, `--accent-color`
+  - **Actualizado:** `--primary-color: #2563eb`, `--secondary-color: #1e40af`, `--accent-color: #3b82f6`
 
-- [ ] **Gradiente Hero**
-  - `src/app/pages/home/home.css` - línea 6
-  - Cambia el `linear-gradient`
+- [x] **Gradiente Hero**
+  - `src/app/pages/home/home.css` - línea 7
+  - **Actualizado:** `linear-gradient(135deg, #667eea 0%, #764ba2 100%)`
 
 ## Comandos Útiles
 

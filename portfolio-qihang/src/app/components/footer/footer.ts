@@ -11,9 +11,9 @@ export class Footer {
   currentYear = new Date().getFullYear();
 
   socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/tuusuario', icon: 'github' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/tuusuario', icon: 'linkedin' },
-    { name: 'Twitter', url: 'https://twitter.com/tuusuario', icon: 'twitter' }
+    { name: 'GitHub', url: 'https://github.com/QihangDev', icon: 'github' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/qihang-li-jiang/', icon: 'linkedin' },
+    { name: 'Instagram', url: 'https://www.instagram.com/qihanglj', icon: 'instagram' }
   ];
 
   quickLinks = [

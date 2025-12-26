@@ -2,7 +2,7 @@
   <nav class="navbar container">
     <div class="logo">
       <a href="#home" (click)="scrollToSection($event, '#home')">
-        <span class="logo-text">Qihang Li Jiang</span>
+        <span class="logo-text">QIHANG LI JIANG</span>
       </a>
     </div>
 
@@ -13,8 +13,10 @@
     <ul class="nav-menu" [class.active]="isMobileMenuOpen">
       @for (item of navItems; track item.link) {
         <li class="nav-item">
-          <a [href]="item.link" class="nav-link" (click)="scrollToSection($event, item.link)">
-            {{ item.label }}
+          <a [href]="item.link" class="nav-link" (click)="scrollToSection($event, item.link)" [attr.aria-label]="item.label" title="{{ item.label }}">
+            <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" [attr.d]="item.icon"></path>
+            </svg>
           </a>
         </li>
       }

@@ -18,10 +18,10 @@ export class Contact {
   };
 
   socialLinks: SocialLink[] = [
-    { name: 'GitHub', url: 'https://github.com/tuusuario', icon: 'github' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/tuusuario', icon: 'linkedin' },
-    { name: 'Twitter', url: 'https://twitter.com/tuusuario', icon: 'twitter' },
-    { name: 'Email', url: 'mailto:tuemail@ejemplo.com', icon: 'email' }
+    { name: 'GitHub', url: 'https://github.com/QihangDev', icon: 'github' },
+    { name: 'LinkedIn', url: 'https://linkedin.com/in/qihang-li-jiang/', icon: 'linkedin' },
+    { name: 'Instagram', url: 'https://www.instagram.com/qihanglj', icon: 'instagram' },
+    { name: 'Email', url: 'mailto:qihangdev@gmail.com', icon: 'email' }
   ];
 
   formSubmitted = false;
