@@ -13,11 +13,12 @@ Esta guía te ayudará a personalizar rápidamente tu portfolio con tus datos pe
 - Estadísticas
 - Colores y branding
 - Proyectos reales (TicTacToe, Mastermind, Minesweeper) con descripciones y enlaces de GitHub
+- Formulario de contacto conectado a EmailJS para envío de correos reales
+- Header con icono del logo y visibilidad condicional del nombre
 
 ### ⏳ Pendiente
 - Reemplazar imágenes placeholder de proyectos (`/img/empty.jpg`) con imágenes reales
 - Actualizar URLs `liveUrl` de proyectos con URLs reales (actualmente usando ejemplos)
-- Conectar formulario de contacto a backend o servicio de email
 
 ## Checklist de Personalización
 
@@ -124,6 +125,13 @@ En `src/app/components/projects/projects.ts`, para cada proyecto actualiza:
   - `src/app/components/footer/footer.html` - línea 60
   - **Actualizado:** "Ripollet, Barcelona, España"
 
+- [x] **Formulario de Contacto con EmailJS**
+  - `src/app/components/contact/contact.ts` - Configuración de EmailJS
+  - `src/app/config/emailjs.config.ts` - Credenciales de EmailJS
+  - **Actualizado:** Formulario conectado a EmailJS para envío de correos reales
+  - **Parámetros configurados:** `from_name`, `from_email`, `subject`, `message`, `time`
+  - **Características:** Manejo de errores, estado de carga, mensajes de éxito/error
+
 ### 7. Estadísticas
 
 En `src/app/components/about/about.html`:
@@ -142,6 +150,18 @@ En `src/app/components/about/about.html`:
 - [x] **Gradiente Hero**
   - `src/app/pages/home/home.css` - línea 7
   - **Actualizado:** `linear-gradient(135deg, #667eea 0%, #764ba2 100%)`
+
+### 9. Header y Navegación
+
+- [x] **Logo con icono**
+  - `src/app/components/header/header.html` - Icono del logo
+  - `src/app/components/header/header.css` - Estilos del logo
+  - **Actualizado:** Icono del favicon (`/img/icon/favicon.png`) visible siempre
+  - **Característica:** El nombre "QIHANG LI JIANG" se oculta cuando estás en la sección `#home`
+
+- [x] **Detección de sección activa**
+  - `src/app/components/header/header.ts` - Lógica de detección
+  - **Actualizado:** El header detecta automáticamente la sección visible y ajusta la visibilidad del nombre
 
 ## Comandos Útiles
 

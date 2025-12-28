@@ -2,7 +2,8 @@
   <nav class="navbar container">
     <div class="logo">
       <a href="#home" (click)="scrollToSection($event, '#home')">
-        <span class="logo-text">QIHANG LI JIANG</span>
+        <img src="/img/icon/favicon.png" alt="Logo" class="logo-icon">
+        <span class="logo-text" [class.hidden]="isHomeSection">QIHANG LI JIANG</span>
       </a>
     </div>
 

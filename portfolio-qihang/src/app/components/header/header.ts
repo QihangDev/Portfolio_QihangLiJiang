@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -7,9 +7,10 @@ import { CommonModule } from '@angular/common';
   templateUrl: './header.html',
   styleUrl: './header.css'
 })
-export class Header {
+export class Header implements OnInit {
   isScrolled = false;
   isMobileMenuOpen = false;
+  isHomeSection = true;
 
   navItems = [
     { 
@@ -37,6 +38,26 @@ export class Header {
   @HostListener('window:scroll')
   onWindowScroll() {
     this.isScrolled = window.scrollY > 50;
+    this.checkCurrentSection();
+  }
+
+  ngOnInit() {
+    this.checkCurrentSection();
+  }
+
+  checkCurrentSection() {
+    const homeSection = document.querySelector('#home');
+    if (homeSection) {
+      const rect = homeSection.getBoundingClientRect();
+      const scrollY = window.scrollY || window.pageYOffset;
+      // Consideramos que estamos en home si:
+      // - Estamos cerca del top (scrollY < 200) O
+      // - La sección home está visible en la parte superior de la ventana
+      this.isHomeSection = scrollY < 200 || (rect.top <= 150 && rect.bottom > 150);
+    } else {
+      // Si no encontramos la sección home, asumimos que no estamos en ella
+      this.isHomeSection = false;
+    }
   }
 
   toggleMobileMenu() {
@@ -53,6 +74,8 @@ export class Header {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       this.closeMobileMenu();
+      // Actualizar la sección después de un pequeño delay para permitir que el scroll termine
+      setTimeout(() => this.checkCurrentSection(), 500);
     }
   }
 }

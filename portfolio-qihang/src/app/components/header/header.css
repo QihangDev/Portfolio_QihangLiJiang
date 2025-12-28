@@ -9,7 +9,7 @@
 }
 
 .header.scrolled {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(107, 114, 128, 0.8);
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow-md);
 }
@@ -21,15 +21,46 @@
   padding: 1.5rem 2rem;
 }
 
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
 .logo-text {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--primary-color);
-  transition: color 0.3s ease;
+  color: white;
+  transition: opacity 0.3s ease, width 0.3s ease, margin 0.3s ease, padding 0.3s ease;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.logo-text.hidden {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .logo a:hover .logo-text {
-  color: var(--secondary-color);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.logo a:hover .logo-icon {
+  opacity: 0.8;
+  transform: scale(1.05);
 }
 
 .nav-menu {
@@ -156,5 +187,14 @@
   .nav-icon {
     width: 28px;
     height: 28px;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
   }
 }

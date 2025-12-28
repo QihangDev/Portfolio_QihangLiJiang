@@ -15,7 +15,7 @@ import { Footer } from '../../components/footer/footer';
 export class Home {
   heroText = {
     greeting: '¡Bienvenido a mi Portfolio!',
-    name: 'Qihang Li Jiang',
+    name: 'QIHANG LI JIANG',
     title: 'Desarrollador Junior Full Stack',
     description: 'Soy una persona orientado al aprendizaje y la mejora continua, me gusta aplicar mis conocimientos en proyectos reales y seguir creciendo profesionalmente.'
   };
