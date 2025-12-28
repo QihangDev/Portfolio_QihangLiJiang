@@ -90,27 +90,47 @@ Edita los siguientes archivos para actualizar tu información:
 
 ### 2. Proyectos
 
-⏳ **Pendiente:** Actualizar proyectos de ejemplo con proyectos reales.
-
-Edita `src/app/components/projects/projects.ts` (líneas 12-71):
+✅ **Actualizado:** Proyectos reales configurados en `src/app/components/projects/projects.ts`:
 
 ```typescript
 projects: Project[] = [
   {
     id: 1,
-    title: 'Tu Proyecto',
-    description: 'Descripción del proyecto',
-    image: 'ruta/a/tu/imagen.jpg',  // Actualmente usando placeholders
-    technologies: ['Angular', 'Node.js'],
-    githubUrl: 'https://github.com/usuario/proyecto',
-    liveUrl: 'https://tu-proyecto.com',
+    title: 'TicTacToe',
+    description: 'Desarrollo de un juego TicTacToe (Tres en Raya) para dos jugadores...',
+    image: '/img/empty.jpg',  // ⏳ Pendiente: reemplazar con imagen real
+    technologies: ['JavaScript', 'HTML', 'CSS'],
+    githubUrl: 'https://github.com/QihangDev/P1_TicTacToe',
+    liveUrl: 'https://ejemplo-ecommerce.com',  // ⏳ Pendiente: actualizar con URL real
+    featured: false
+  },
+  {
+    id: 2,
+    title: 'Mastermind',
+    description: 'Desarrollo del juego Mastermind...',
+    image: '/img/empty.jpg',  // ⏳ Pendiente: reemplazar con imagen real
+    technologies: ['JavaScript', 'HTML', 'CSS'],
+    githubUrl: 'https://github.com/QihangDev/P2_Mastermind',
+    liveUrl: 'https://ejemplo-tasks.com',  // ⏳ Pendiente: actualizar con URL real
+    featured: false
+  },
+  {
+    id: 3,
+    title: 'Minesweeper',
+    description: 'Desarrollo del juego Minesweeper (Buscaminas)...',
+    image: '/img/empty.jpg',  // ⏳ Pendiente: reemplazar con imagen real
+    technologies: ['JavaScript', 'HTML', 'CSS'],
+    githubUrl: 'https://github.com/QihangDev/P3_Minesweeper',
+    liveUrl: 'https://ejemplo-weather.com',  // ⏳ Pendiente: actualizar con URL real
     featured: true
   }
-  // Añade más proyectos aquí
 ];
 ```
 
-**Nota:** Los proyectos actualmente contienen datos de ejemplo (E-Commerce Platform, Task Management App, Weather Dashboard, etc.) que deben ser reemplazados con tus proyectos reales. Las imágenes están usando `https://via.placeholder.com/600x400` y deben ser reemplazadas con imágenes reales de tus proyectos.
+**Estado:**
+- ✅ Títulos, descripciones y enlaces de GitHub actualizados con proyectos reales
+- ⏳ Imágenes todavía usando `/img/empty.jpg` - necesitan ser reemplazadas con imágenes reales
+- ⏳ URLs `liveUrl` todavía usando ejemplos - necesitan ser actualizadas con URLs reales
 
 ### 3. Redes Sociales
 
@@ -181,8 +201,9 @@ Los archivos de producción se generarán en el directorio `dist/`.
 
 - ✅ Reemplazar imágenes placeholder con tus imágenes reales (Hero y About completadas)
 - ✅ Actualizar toda la información personal (completado)
-- ⏳ Reemplazar proyectos de ejemplo con proyectos reales en `projects.ts`
-- ⏳ Reemplazar imágenes placeholder de proyectos con imágenes reales
+- ✅ Reemplazar proyectos de ejemplo con proyectos reales en `projects.ts` (completado: TicTacToe, Mastermind, Minesweeper)
+- ⏳ Reemplazar imágenes placeholder de proyectos (`/img/empty.jpg`) con imágenes reales
+- ⏳ Actualizar URLs `liveUrl` de proyectos con URLs reales (actualmente usando ejemplos)
 - ⏳ Conectar el formulario de contacto a un backend o servicio de email
 - ✅ Personalizar colores según tu preferencia (completado)
 - ⏳ Optimizar imágenes para mejor rendimiento

@@ -12,10 +12,11 @@ Esta guía te ayudará a personalizar rápidamente tu portfolio con tus datos pe
 - Información de contacto (email y ubicación)
 - Estadísticas
 - Colores y branding
+- Proyectos reales (TicTacToe, Mastermind, Minesweeper) con descripciones y enlaces de GitHub
 
 ### ⏳ Pendiente
-- Reemplazar proyectos de ejemplo con proyectos reales
-- Reemplazar imágenes placeholder de proyectos con imágenes reales
+- Reemplazar imágenes placeholder de proyectos (`/img/empty.jpg`) con imágenes reales
+- Actualizar URLs `liveUrl` de proyectos con URLs reales (actualmente usando ejemplos)
 - Conectar formulario de contacto a backend o servicio de email
 
 ## Checklist de Personalización
@@ -49,7 +50,8 @@ Esta guía te ayudará a personalizar rápidamente tu portfolio con tus datos pe
 
 - [ ] **Imágenes de proyectos**
   - `src/app/components/projects/projects.ts` - en cada proyecto
-  - Reemplaza todas las URLs de placeholder (actualmente usando `https://via.placeholder.com/600x400`)
+  - Reemplaza todas las URLs de placeholder (actualmente usando `/img/empty.jpg`)
+  - Proyectos actuales: TicTacToe, Mastermind, Minesweeper
 
 ### 3. Habilidades
 
@@ -69,15 +71,25 @@ Esta guía te ayudará a personalizar rápidamente tu portfolio con tus datos pe
 
 En `src/app/components/projects/projects.ts`, para cada proyecto actualiza:
 
-- [ ] `title`: Nombre del proyecto
-- [ ] `description`: Descripción breve
-- [ ] `image`: Ruta a la imagen del proyecto (actualmente usando placeholders)
-- [ ] `technologies`: Array de tecnologías usadas
-- [ ] `githubUrl`: URL de tu repositorio
+- [x] `title`: Nombre del proyecto
+  - **Actualizado:** TicTacToe, Mastermind, Minesweeper
+- [x] `description`: Descripción breve
+  - **Actualizado:** Descripciones detalladas de cada juego
+- [ ] `image`: Ruta a la imagen del proyecto (actualmente usando `/img/empty.jpg`)
+  - **Pendiente:** Reemplazar con imágenes reales de cada proyecto
+- [x] `technologies`: Array de tecnologías usadas
+  - **Actualizado:** JavaScript, HTML, CSS para todos los proyectos
+- [x] `githubUrl`: URL de tu repositorio
+  - **Actualizado:** 
+    - TicTacToe: `https://github.com/QihangDev/P1_TicTacToe`
+    - Mastermind: `https://github.com/QihangDev/P2_Mastermind`
+    - Minesweeper: `https://github.com/QihangDev/P3_Minesweeper`
 - [ ] `liveUrl`: URL del proyecto en vivo
-- [ ] `featured`: true/false si es destacado
+  - **Pendiente:** Actualizar con URLs reales (actualmente usando ejemplos)
+- [x] `featured`: true/false si es destacado
+  - **Actualizado:** Minesweeper marcado como destacado
 
-**Nota:** Los proyectos actualmente contienen datos de ejemplo que deben ser reemplazados con tus proyectos reales.
+**Nota:** Los proyectos ya han sido actualizados con proyectos reales. Solo faltan las imágenes y las URLs en vivo.
 
 ### 5. Redes Sociales
 

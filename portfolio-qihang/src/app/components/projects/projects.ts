@@ -12,61 +12,73 @@ export class Projects {
   projects: Project[] = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'Plataforma de comercio electrónico completa con carrito de compras, pasarela de pago y panel de administración.',
-      image: 'https://via.placeholder.com/600x400',
-      technologies: ['Angular', 'Node.js', 'MongoDB', 'Stripe'],
-      githubUrl: 'https://github.com/tuusuario/ecommerce',
-      liveUrl: 'https://ejemplo-ecommerce.com',
-      featured: true
+      title: 'TicTacToe',
+      description: 'Desarrollo de un juego TicTacToe (Tres en Raya) para dos jugadores, donde se turnan para marcar una cuadrícula 3x3 con X y O, detectando automáticamente victorias, empates y permitiendo reiniciar la partida.',
+      image: '/img/empty.jpg',
+      technologies: ['JavaScript', 'HTML', 'CSS'],
+      githubUrl: 'https://github.com/QihangDev/P1_TicTacToe',
+      liveUrl: 'https://github.com/QihangDev/P1_TicTacToe',
+      featured: false
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'Aplicación de gestión de tareas con funcionalidades de colaboración en tiempo real y notificaciones.',
-      image: 'https://via.placeholder.com/600x400',
-      technologies: ['React', 'TypeScript', 'Firebase', 'Material-UI'],
-      githubUrl: 'https://github.com/tuusuario/task-app',
-      liveUrl: 'https://ejemplo-tasks.com',
-      featured: true
+      title: 'Mastermind',
+      description: 'Desarrollo del juego Mastermind, en el que un jugador debe adivinar una combinación secreta de colores mediante intentos sucesivos, recibiendo pistas que indican aciertos exactos y parciales hasta descubrir la solución o agotar los intentos.',
+      image: '/img/empty.jpg',
+      technologies: ['JavaScript', 'HTML', 'CSS'],
+      githubUrl: 'https://github.com/QihangDev/P2_Mastermind',
+      liveUrl: 'https://github.com/QihangDev/P2_Mastermind',
+      featured: false
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'Dashboard interactivo del clima con gráficos y pronósticos utilizando APIs de terceros.',
-      image: 'https://via.placeholder.com/600x400',
-      technologies: ['Vue.js', 'Chart.js', 'OpenWeather API', 'Tailwind'],
-      githubUrl: 'https://github.com/tuusuario/weather-dashboard',
-      liveUrl: 'https://ejemplo-weather.com',
-      featured: false
+      title: 'Minesweeper',
+      description: 'Desarrollo del juego Minesweeper (Buscaminas), donde el jugador debe descubrir todas las casillas libres de una cuadrícula sin activar minas, utilizando pistas numéricas para deducir su ubicación y ganar la partida. Junto con el proyecto también hay un formulario para la gestión de usuarios, tanto de registro como de inicio de sesión.',
+      image: '/img/empty.jpg',
+      technologies: ['JavaScript', 'HTML', 'CSS'],
+      githubUrl: 'https://github.com/QihangDev/P3_Minesweeper',
+      liveUrl: 'https://github.com/QihangDev/P3_Minesweeper',
+      featured: true
     },
     {
       id: 4,
-      title: 'Social Media Analytics',
-      description: 'Herramienta de análisis de redes sociales con visualización de datos y reportes automatizados.',
-      image: 'https://via.placeholder.com/600x400',
-      technologies: ['Angular', 'D3.js', 'Express', 'PostgreSQL'],
-      githubUrl: 'https://github.com/tuusuario/social-analytics',
-      featured: false
+      title: 'QQQQQ',
+      description: 'Juego de plataformas 2D centrado en la precisión y el control del personaje, donde la mecánica principal consiste en invertir la gravedad en lugar de saltar. El jugador debe superar niveles llenos de obstáculos y trampas, sincronizando cada cambio de gravedad con exactitud para avanzar, explorar el entorno y completar desafíos cada vez más exigentes.',
+      image: '/img/empty.jpg',
+      technologies: ['C#', 'Unity','Krita'],
+      githubUrl: 'https://github.com/QihangDev/P4_QQQQQ',
+      liveUrl: 'https://github.com/QihangDev/P4_QQQQQ',
+      featured: true
     },
     {
       id: 5,
-      title: 'Recipe Finder',
-      description: 'Aplicación para buscar y guardar recetas favoritas con búsqueda por ingredientes.',
-      image: 'https://via.placeholder.com/600x400',
-      technologies: ['React Native', 'Redux', 'Spoonacular API'],
-      githubUrl: 'https://github.com/tuusuario/recipe-finder',
-      featured: false
+      title: 'Foxbound: Trials of the Wild',
+      description: 'Juego de acción y exploración con elementos roguelike, caracterizado por niveles generados de forma procedural, muerte permanente y progreso basado en la mejora de habilidades u objetos. En cada partida, el jugador se enfrenta a enemigos y desafíos únicos, tomando decisiones estratégicas que influyen en su avance y fomentan la rejugabilidad.',
+      image: '/img/empty.jpg',
+      technologies: ['C#', 'Unity','Blender','Krita'],
+      githubUrl: 'https://github.com/QihangDev/P5_Foxbound',
+      liveUrl: 'https://github.com/QihangDev/P5_Foxbound',
+      featured: true
     },
     {
       id: 6,
-      title: 'Portfolio Builder',
-      description: 'Generador de portfolios personalizados con plantillas y editor visual drag-and-drop.',
-      image: 'https://via.placeholder.com/600x400',
-      technologies: ['Angular', 'RxJS', 'Node.js', 'MongoDB'],
-      githubUrl: 'https://github.com/tuusuario/portfolio-builder',
-      liveUrl: 'https://ejemplo-portfolio.com',
+      title: 'IntoTheBlack (Backend)',
+      description: 'Desarrollo del backend que gestiona la comunicación entre el servidor y el juego Into The Black, un juego de puzles 3D en primera persona ambientado en el ITB. El servidor se encarga de la gestión de usuarios y del almacenamiento del progreso y datos de las partidas de los jugadores.',
+      image: '/img/empty.jpg',
+      technologies: ['Java', 'Spring Boot','Swagger'],
+      githubUrl: 'https://github.com/QihangDev/P6_IntoTheBack_Backend',
+      liveUrl: 'https://github.com/QihangDev/P6_IntoTheBack_Backend',
       featured: true
+    },
+    {
+      id: 7,
+      title: 'Artificial Intelligence Behaviour',
+      description: 'El proyecto consiste en el desarrollo e implementación de los comportamientos de personajes controlados por la máquina (IA) para un juego 3D de supervivencia o RPG. Esto incluye la programación de rutinas de movimiento, reacciones a estímulos del jugador, decisiones tácticas en combate y otras interacciones con el entorno.',
+      image: '/img/empty.jpg',
+      technologies: ['C#', 'Unity','Blender'],
+      githubUrl: 'https://github.com/QihangDev/P7_Artificial_Intelligence_Behaviour',
+      liveUrl: 'https://github.com/QihangDev/P7_Artificial_Intelligence_Behaviour',
+      featured: false
     }
   ];
 
