@@ -1,1 +1,26 @@
-<p>header works!</p>
+<header class="header" [class.scrolled]="isScrolled">
+  <nav class="navbar container">
+    <div class="logo">
+      <a href="#home" (click)="scrollToSection($event, '#home')">
+        <img src="/img/icon/favicon.png" alt="Logo" class="logo-icon">
+        <span class="logo-text" [class.hidden]="isHomeSection">QIHANG LI JIANG</span>
+      </a>
+    </div>
+
+    <button class="mobile-menu-toggle" (click)="toggleMobileMenu()" [attr.aria-expanded]="isMobileMenuOpen">
+      <span class="hamburger" [class.active]="isMobileMenuOpen"></span>
+    </button>
+
+    <ul class="nav-menu" [class.active]="isMobileMenuOpen">
+      @for (item of navItems; track item.link) {
+        <li class="nav-item">
+          <a [href]="item.link" class="nav-link" (click)="scrollToSection($event, item.link)" [attr.aria-label]="item.label" title="{{ item.label }}">
+            <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" [attr.d]="item.icon"></path>
+            </svg>
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+</header>
