@@ -14,6 +14,7 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
+            "baseHref": "/Portfolio_QihangLiJiang/",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
