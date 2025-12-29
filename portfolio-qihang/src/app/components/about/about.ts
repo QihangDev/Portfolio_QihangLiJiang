@@ -9,7 +9,7 @@ import { SkillCategory } from '../../models/skill.model';
   styleUrl: './about.css'
 })
 export class About {
-  profileImage = '/img/foto_perfil.jpeg';
+  profileImage = 'img/foto_perfil.jpeg';
 
   aboutText = {
     intro: 'Soy un desarrollador apasionado por solucionar retos tecnológicos',
